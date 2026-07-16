@@ -1,0 +1,4 @@
+mcp>=1.27,<2
+boto3
+python-dotenv
+pytest

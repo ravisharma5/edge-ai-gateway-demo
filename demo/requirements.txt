@@ -1,0 +1,4 @@
+streamlit
+mcp>=1.27,<2
+httpx
+Pillow

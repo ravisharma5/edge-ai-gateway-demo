@@ -1,0 +1,15 @@
+# MCP Gateway server registrations
+# Source: Kuadrant/mcp-gateway internal/config/types.go MCPServer struct
+# Field reference: name, url, hostname, prefix, state
+# Note: Use "state" field, NOT "enabled" (Go struct has no "enabled" field)
+servers:
+  - name: s3-storage
+    url: http://localhost:3001/mcp
+    hostname: s3.local
+    prefix: "s3_"
+    state: "Enabled"
+  - name: cv-inference
+    url: http://localhost:3002/mcp
+    hostname: cv.local
+    prefix: "cv_"
+    state: "Enabled"
