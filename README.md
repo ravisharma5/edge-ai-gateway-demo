@@ -18,6 +18,12 @@ AI Gateway (Envoy :8888)
 
 The MCP Gateway (Broker + Router) sits in front of two Python MCP servers. The Broker merges their tool lists under prefixed names (`s3_list_objects`, `s3_get_object`, `cv_analyze_image`). When a `tools/call` comes in, Envoy's ext_proc filter hands it to the Router, which rewrites the `:authority` header based on the tool prefix so Envoy routes to the correct backend.
 
+## Screenshots
+
+| Chest X-ray Input | Classification Result + Platform Metrics |
+|---|---|
+| ![X-ray sample](docs/screenshots/xray-sample.png) | ![Demo app](docs/screenshots/demo-app.png) |
+
 ## Demo flow
 
 From the doctor's perspective, the workflow is 3 steps. Under the hood, each step is an MCP tool call routed through the AI Gateway:
