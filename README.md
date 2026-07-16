@@ -20,11 +20,11 @@ The MCP Gateway (Broker + Router) sits in front of two Python MCP servers. The B
 
 ## Screenshots
 
-### Input: Chest X-ray from S3 storage
-![X-ray sample](docs/screenshots/xray-sample.png)
+### Select a patient X-ray
+![Demo input](docs/screenshots/demo-input.png)
 
-### Output: Classification result + AI Gateway platform metrics
-![Demo app](docs/screenshots/demo-app.png)
+### Classification result + AI Gateway platform metrics
+![Demo result](docs/screenshots/demo-app.png)
 
 ## Demo flow
 
